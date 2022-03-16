@@ -1,0 +1,152 @@
+
+html, body {
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+div {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+
+    font-weight: bold;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 1.5em 15px;
+    display: table;
+}
+
+nav li {
+    font-weight: bold;
+    display: inline-block;
+    color: darkblue;
+    border-radius: 1em;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 12px;
+    font-weight: 400;
+}
+
+nav a span {
+    padding-top: 4px;
+}
+
+nav li:hover {
+    color: white;
+    background: darkblue;
+}
+
+nav li:active {
+    color: darkblue;
+    background: lightblue;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #101010;
+    }
+
+    h1 {
+        color: #dddddd;
+    }
+    h3{
+        color: #dddddd
+    }
+    h2{
+        color: #dddddd
+    }
+
+
+    a{
+        color: #dddddd
+    }
+    nav li:hover {
+        color: black;
+        background: dimgrey;
+    }
+
+    nav li:active {
+        color: black;
+
+    }
+
+    nav li {
+        display: inline-block;
+        color: whitesmoke;
+        border-radius: 1em;
+    }
+}
+
+.red {
+    font-weight: 950;
+    background: #E91878;
+    background: linear-gradient(45deg, #E91878, #FC8829);
+    background-size: 100%;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.blue{
+    font-weight: 950;
+    background: #118BF5;
+    background: linear-gradient(45deg, #118BF5, #931DE7);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+;
+}
+
+.green {
+    font-weight: 950;
+    background: #24D91C;
+    background: linear-gradient(45deg, #24D91C, #02A9C1);
+    background-size: 100%;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.yellow {
+    font-weight: 950;
+    background: #FC8829;
+    background: linear-gradient(45deg, #FC8829, yellow);
+    background-size: 100%;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.purple{
+    font-weight: 950;
+    background: #931DE7;
+    background: linear-gradient(45deg, #931DE7, #EE82EE);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+;
+
+}
