@@ -1,27 +1,36 @@
-
-html, body {
-    background: #f2f2f2;
-    margin: 0;
-    padding: 0;
+body{
+    background-color: #221e36;
+    color: #c2efeb;
     font-family: 'Montserrat', sans-serif;
     display: table;
+    text-align: center;
     height: 100%;
     width: 100%;
-    text-align: center;
-
+    
 }
+
 
 div {
     display: table-cell;
     vertical-align: middle;
-    padding-top: 1.5em;
+    padding-top: 1.5em
 }
 
-h1 {
-    font-size: 2em;
-
-    font-weight: bold;
-
+h1{
+    font-size: 2.5em;
+    font-weight: 800;
+}
+h2{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+h4{
+    font-size: 1em;
+    font-weight: 300;
 }
 
 nav ul {
@@ -34,7 +43,7 @@ nav ul {
 nav li {
     font-weight: bold;
     display: inline-block;
-    color: darkblue;
+    color: #C2EFEB;
     border-radius: 1em;
 }
 
@@ -51,8 +60,8 @@ nav a span {
 }
 
 nav li:hover {
-    color: white;
-    background: darkblue;
+    color: #41337a;
+    background: #ECFEE8;
 }
 
 nav li:active {
@@ -60,43 +69,6 @@ nav li:active {
     background: lightblue;
 }
 
-
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background: #101010;
-    }
-
-    h1 {
-        color: #dddddd;
-    }
-    h3{
-        color: #dddddd
-    }
-    h2{
-        color: #dddddd
-    }
-
-
-    a{
-        color: #dddddd
-    }
-    nav li:hover {
-        color: black;
-        background: dimgrey;
-    }
-
-    nav li:active {
-        color: black;
-
-    }
-
-    nav li {
-        display: inline-block;
-        color: whitesmoke;
-        border-radius: 1em;
-    }
-}
 
 .red {
     font-weight: 950;
@@ -148,5 +120,3 @@ nav li:active {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 ;
-
-}
