@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "TescoModern";
+    src: url("tescomodern.ttf") format(truetype);
+  }
+  
+
+body{
+    
+    color: #00539F;
+    font-family: "TescoModern";
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 0;
+    padding: 0;
+}
+
+.num{
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.tesco-red
+{
+    color: #E31837;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown until Tesco Leaving Date</title>
+    <link rel="stylesheet" href="countdown.css">
+    <script>
+        
+        var endShift = new Date("Dec 29, 2022 14:00:00")
+        var countDownDate = endShift.getTime();
+        
+    
+        // Run myfunc every second
+        var myfunc = setInterval(function() {
+    
+        var now = new Date().getTime();
+        var timeleft = countDownDate - now;
+            
+        // Calculating the days, hours, minutes and seconds left
+        var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+            
+        // Result is output to the specific element
+        document.getElementById("endTime").innerHTML = endShift.toDateString() + " at " + endShift.toLocaleTimeString();
+        document.getElementById("days").innerHTML = days
+        document.getElementById("hours").innerHTML = hours
+        document.getElementById("minutes").innerHTML = minutes
+        document.getElementById("seconds").innerHTML = seconds
+        }, 1000);
+        </script>
+
+</head>
+<body>
+    <h1 style="text-align: center;">Time until Patrick leaves Tesco<span class="tesco-red">.</span></h1>
+    <h2 style="text-align: center;">(End of last shift is: <span id="endTime"></span>)</h2>
+
+    <div id="countdown" style="text-align: center; font-size: 50px; font-weight: bold;">
+        <span class="num" id="days"></span> Days
+        <br>
+        <span class="num" id="hours"></span> Hours
+        <br>
+        <span class="num" id="minutes"></span> Minutes
+        <br>
+        <span class="num" id="seconds"></span> Seconds
+    </div>
+
+</body>
+</html>
