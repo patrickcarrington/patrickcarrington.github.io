@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/patrickcarrington/Website/patrickcarrington.github.io/uni-work/mapp-images",
+      "program": "/Users/patrickcarrington/Website/patrickcarrington.github.io/uni-work/mapp-images/build/Debug/outDebug"
+    }
+  ]
+}
